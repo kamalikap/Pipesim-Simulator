@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs48 \cf0 \ul \ulc0 LAB -1
+\b0\fs24 \ulnone \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 						
+\b \ul Authors
+\b0 \ulnone \
+		\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+			1. Pratheek Chindodi Rajashekar(SID: - 862002345)\
+\
+			2. Kamalika Poddar(SID:-862002289)\
+		\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+This lab is completed by 
+\b Pratheek Chindodi Rajashekar and Kamalika Poddar
+\b0 .
+\b \
+
+\b0 \
+
+\b\fs36 \ul Important
+\fs24  
+\b0 \ulnone : -  The filename \'93
+\b launchscript.sh
+\b0 \'94 is a Shell script to run the 2 Trace_Files. The below line of code can be used to run the Shell script: -\
+\
+->  
+\b ./launchscript.sh\ul \
+\
+Steps to execute(in detail) the Pipeline Simulator
+\b0 \ulnone : -\
+\
+1) Compile both pipeline.cpp and main.cpp with the below lines of code:-\
+\
+- >  	
+\b g++ -c main.cpp
+\b0 \
+->	
+\b g++ -c pipeline.cpp
+\b0 \
+\
+2) Produce an output file \'93pipesim\'94 with the below line of code: -\
+\
+-> 	
+\b g++ pipeline.o main.o -o pipesim
+\b0 \
+\
+3) Run the following lines of code to enable forwarding for different window sizes.\
+\
+-> 	
+\b ./pipesim -i [filename] -f [forwarding window width]\
+
+\b0 \
+Example : - \
+\
+-> 	./pipesim -i instruction.txt -f 0   // Forwarding for instruction.txt with forwarding width =0\
+-> 	./pipesim -i instruction.txt -f 1   // Forwarding for instruction.txt with forwarding width = 1\
+-> 	./pipesim -i instruction.txt -f 2   // Forwarding for instruction.txt with forwarding width = 2\
+\
+4) The above examples can be repeated for the other filenames -> \'93instruction2.txt\'94 and \'93instruction3.txt\'94\
+\
+\
+References : - \
+\
+1) https://www.youtube.com/watch?v=s0RUg3ribfw\
+2) https://courses.cs.washington.edu/courses/cse378/09au/lectures/cse378au09-15.pdf\
+3) https://www.ece.ucsb.edu/~strukov/ece154aFall2013/viewgraphs/pipelinedMIPS.pdf\
+\
+\
+}
